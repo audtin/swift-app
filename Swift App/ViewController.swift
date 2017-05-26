@@ -11,15 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
+
+    @IBOutlet weak var text1: UITextField!
     
-    var tapCount = 0
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonPressed(_ sender: Any) {
-        tapCount = tapCount + 1
-        if tapCount >= 20{
-            theLabel.text = "You pressed the button twenty times!"
-            print(tapCount)
-        }
+        print(text1.text!)
+        print(text2.text!)
     }
     
     @IBAction func noPressMe(_ sender: Any) {

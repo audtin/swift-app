@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,28 +18,45 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-j1-2cD">
-                                <rect key="frame" x="153" y="66" width="68" height="29"/>
-                                <state key="normal" title="Press me."/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnD-Ih-E3H"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, world." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMg-CV-caq">
-                                <rect key="frame" x="136" y="36" width="103" height="22"/>
+                                <rect key="frame" x="112" y="36" width="103" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-ew-yry">
-                                <rect key="frame" x="264" y="617" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="No, press me!"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-ew-yry">
+                                <rect key="frame" x="136" y="617" width="96" height="30"/>
+                                <state key="normal" title="No, Press me!"/>
                                 <connections>
                                     <action selector="noPressMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51P-Lz-Mup"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5X-d0-a4n">
+                                <rect key="frame" x="112" y="103" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="p5N-Lc-who"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vx-xm-rAj">
+                                <rect key="frame" x="112" y="141" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JYB-m3-FvC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-j1-2cD">
+                                <rect key="frame" x="129" y="65" width="68" height="30"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnD-Ih-E3H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,17 +64,25 @@
                         <constraints>
                             <constraint firstItem="VMg-CV-caq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="5Jm-1k-b5N"/>
                             <constraint firstItem="mdS-j1-2cD" firstAttribute="top" secondItem="VMg-CV-caq" secondAttribute="bottom" constant="8" id="5bv-pU-Qe9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VJD-ew-yry" secondAttribute="bottom" constant="20" id="72E-sG-sVz"/>
+                            <constraint firstItem="6vx-xm-rAj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J4L-Ak-7DP"/>
                             <constraint firstItem="VMg-CV-caq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oeh-Fz-7rY"/>
+                            <constraint firstItem="VJD-ew-yry" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRo-YQ-Qgw"/>
                             <constraint firstItem="mdS-j1-2cD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjd-Dr-0tC"/>
+                            <constraint firstItem="6vx-xm-rAj" firstAttribute="top" secondItem="j5X-d0-a4n" secondAttribute="bottom" constant="8" id="hNg-0p-0Yp"/>
+                            <constraint firstItem="j5X-d0-a4n" firstAttribute="top" secondItem="mdS-j1-2cD" secondAttribute="bottom" constant="7" id="iEs-5G-PHf"/>
+                            <constraint firstItem="j5X-d0-a4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLo-aW-nwg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="j5X-d0-a4n" id="ec8-6M-9jH"/>
+                        <outlet property="text2" destination="6vx-xm-rAj" id="ydX-zb-z4m"/>
                         <outlet property="theLabel" destination="VMg-CV-caq" id="8wM-Oj-5Dc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709.60000000000002" y="41.829085457271368"/>
+            <point key="canvasLocation" x="484" y="-17"/>
         </scene>
     </scenes>
 </document>
