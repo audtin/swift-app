@@ -21,19 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-j1-2cD">
+                                <rect key="frame" x="129" y="65" width="68" height="30"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnD-Ih-E3H"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, world." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMg-CV-caq">
                                 <rect key="frame" x="112" y="36" width="103" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-ew-yry">
-                                <rect key="frame" x="136" y="617" width="96" height="30"/>
-                                <state key="normal" title="No, Press me!"/>
-                                <connections>
-                                    <action selector="noPressMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51P-Lz-Mup"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5X-d0-a4n">
                                 <rect key="frame" x="112" y="103" width="97" height="30"/>
                                 <constraints>
@@ -52,11 +52,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-j1-2cD">
-                                <rect key="frame" x="129" y="65" width="68" height="30"/>
-                                <state key="normal" title="Enter"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-ew-yry">
+                                <rect key="frame" x="112" y="519" width="97" height="30"/>
+                                <state key="normal" title="No, press me!"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnD-Ih-E3H"/>
+                                    <action selector="noPressMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51P-Lz-Mup"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="-17"/>
+            <point key="canvasLocation" x="-156" y="-119"/>
         </scene>
     </scenes>
 </document>
